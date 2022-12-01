@@ -9,6 +9,7 @@
   "author": "Daniel Hernandez",
   "license": "MIT",
   "dependencies": {
+    "re-csset": "^1.1.2",
     "sass": "^1.56.1"
   }
 }
