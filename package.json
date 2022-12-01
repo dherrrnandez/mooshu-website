@@ -1,0 +1,14 @@
+{
+  "name": "mooshu-website",
+  "version": "1.0.0",
+  "description": "This is the product website for Mooshu",
+  "main": "index.js",
+  "scripts": {
+    "w-sass": "sass --watch ./styles/main.scss:./styles/main.css "
+  },
+  "author": "Daniel Hernandez",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}
