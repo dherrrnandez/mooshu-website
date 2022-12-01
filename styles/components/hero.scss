@@ -1,0 +1,33 @@
+@use "../utilities" as *;
+
+#hero {
+    padding: 1rem 0;
+}
+
+.hero-text {
+    display: grid;
+    justify-content: center;
+
+    h2 {
+        padding: 1rem;
+        font-size: $title;
+        font-weight: bold;
+    }
+
+    p {
+        width: 280px;
+        padding-bottom: 2rem;
+        font-size: $text;
+    }
+
+    button {
+        width: fit-content;
+        margin: auto;
+        padding: 1rem;
+
+        background-color: $black;
+        color: $red;
+        border-radius: 10px;
+        font-size: $button;
+    }
+}

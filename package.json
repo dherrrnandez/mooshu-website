@@ -4,7 +4,7 @@
   "description": "This is the product website for Mooshu",
   "main": "index.js",
   "scripts": {
-    "w-sass": "sass --watch ./styles/main.scss:./styles/main.css "
+    "watch": "sass --watch ./styles/main.scss:./styles/main.css "
   },
   "author": "Daniel Hernandez",
   "license": "MIT",
