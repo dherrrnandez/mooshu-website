@@ -219,6 +219,11 @@ nav {
     overflow: auto;
   }
 }
+@media (width > 1350px) {
+  nav {
+    padding: 0.5rem 0;
+  }
+}
 #hero {
   padding: 1rem 0;
 }
