@@ -22,23 +22,74 @@
 .content-text {
     display: grid;
     justify-items: center;
+    text-align: center;
 
     h3 {
         padding: 1rem;
         font-size: $header;
         font-weight: bold;
-        text-align: center;
     }
 
     p {
         width: 80%;
         padding-bottom: 1rem;
         font-size: $text;
-        text-align: left;
     }
 
     a {
         font-weight: bold;
         text-decoration: underline;
+    }
+}
+
+@media (width > 800px) {
+    .content-container {
+        margin-bottom: 9rem;
+    }
+
+    .content-text {
+        align-content: center;
+
+        h3 {
+            font-size: $des-header;
+        }
+
+        p {
+            font-size: $des-text;
+            width: 500px;
+        }
+    }
+}
+
+@media (width > 1000px) {
+    .content-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+
+        img {
+            grid-column: span 2;
+        }
+    }
+
+    .content-container:nth-child(2) {
+        .content-text {
+            order: 1;
+        }
+    }
+
+    .content-container:last-child {
+        .content-text {
+            grid-column: span 3;
+
+            p {
+                width: 500px;
+            }
+        }
+    }
+
+    .content-text {
+        p {
+            width: 425px;
+        }
     }
 }

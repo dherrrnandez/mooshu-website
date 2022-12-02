@@ -10,3 +10,11 @@ footer {
         font-size: $text;
     }
 }
+
+@media (width > 800px) {
+    footer {
+        grid-auto-flow: column;
+        place-items: center;
+        gap: 8rem;
+    }
+}

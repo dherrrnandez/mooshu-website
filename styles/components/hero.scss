@@ -12,6 +12,7 @@
         padding: 1rem;
         font-size: $title;
         font-weight: bold;
+        line-height: 1;
     }
 
     p {
@@ -46,4 +47,36 @@
     display: flex;
     place-content: center;
     padding: 2rem 0 4rem;
+}
+
+@media (width > 800px) {
+    .hero-text {
+        h2 {
+            font-size: $des-title;
+        }
+
+        p {
+            font-size: $des-text;
+            width: 550px;
+            justify-self: center;
+        }
+
+        button {
+            font-size: $des-button;
+        }
+    }
+}
+
+@media (width > 1000px) {
+    #hero {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        padding: 9rem 0;
+    }
+
+    .hero-img {
+        height: 440px;
+        width: 270px;
+    }
 }

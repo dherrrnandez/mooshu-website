@@ -4,6 +4,7 @@ nav {
     position: fixed;
     display: flex;
     width: 100%;
+    max-width: 1300px;
     padding: 0.5rem;
     z-index: 1;
 
@@ -56,5 +57,33 @@ nav {
 
     .menu {
         transform: translate(0);
+    }
+}
+
+@media (width > 800px) {
+    nav {
+        padding: 0.5rem 1.5rem;
+        box-shadow: none;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .menu {
+        position: relative;
+        height: auto;
+        transform: translate(0);
+        grid-auto-flow: column;
+        font-size: $des-button;
+        justify-content: right;
+
+        .menu-item {
+            color: $black;
+        }
+    }
+
+    .menu-active {
+        overflow: auto;
     }
 }
