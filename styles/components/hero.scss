@@ -25,9 +25,15 @@
         margin: auto;
         padding: 1rem;
 
+        font-size: $button;
+        border-radius: 10px;
         background-color: $black;
         color: $red;
-        border-radius: 10px;
-        font-size: $button;
     }
+}
+
+.hero-img {
+    display: flex;
+    place-content: center;
+    padding: 2rem 0 4rem;
 }
