@@ -29,6 +29,16 @@
         border-radius: 10px;
         background-color: $black;
         color: $red;
+
+        transition: color 200ms;
+    }
+
+    button:hover {
+        color: $yellow;
+    }
+
+    button:active {
+        transform: translate(0, 2px);
     }
 }
 

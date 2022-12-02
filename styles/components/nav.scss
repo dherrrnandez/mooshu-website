@@ -12,18 +12,22 @@ nav {
 
     background-color: $yellow;
     font-size: $header;
-    color: $red;
     box-shadow: 0px 0px 20px rgba(30, 30, 30, 0.1);
-}
-
-
-#logo {
-    font-weight: bold;
 }
 
 #hamburger {
     background-color: transparent;
     height: fit-content;
+
+    transition: filter 300ms;
+}
+
+#hamburger:hover {
+    filter: brightness(85%);
+}
+
+#hamburger:active {
+    filter: brightness(85%);
 }
 
 .menu {
@@ -40,6 +44,7 @@ nav {
 
     font-size: $title;
     font-weight: bold;
+    color: $red;
     background-color: $yellow;
 
     transform: translate(-105%);

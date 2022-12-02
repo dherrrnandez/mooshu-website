@@ -19,3 +19,25 @@ main {
     padding-top: 56px;
     padding-inline: 0.5rem;
 }
+
+#logo {
+    font-size: $header;
+    font-weight: bold;
+    color: $red;
+}
+
+#logo:hover {
+    text-decoration: none;
+}
+
+#logo:active {
+    filter: brightness(85%);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    filter: brightness(85%);
+}
